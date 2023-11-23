@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8ceebc5985734e70be8eb3468545d0af" Name="Diagram1">
+        <EntityTypeShape EntityType="CoalModel.CIty" Width="1.5" PointX="1.5" PointY="14.375" />
+        <EntityTypeShape EntityType="CoalModel.City_coal" Width="1.5" PointX="0.75" PointY="1.375" />
+        <EntityTypeShape EntityType="CoalModel.Home" Width="1.5" PointX="1.5" PointY="8.125" />
+        <EntityTypeShape EntityType="CoalModel.Order" Width="1.5" PointX="3" PointY="5" />
+        <EntityTypeShape EntityType="CoalModel.Ordered_coal" Width="1.5" PointX="5.25" PointY="1" />
+        <EntityTypeShape EntityType="CoalModel.Physical_person" Width="1.5" PointX="0.75" PointY="5.125" />
+        <EntityTypeShape EntityType="CoalModel.Street" Width="1.5" PointX="1.5" PointY="11.125" />
+        <EntityTypeShape EntityType="CoalModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.75" />
+        <EntityTypeShape EntityType="CoalModel.Type_coal" Width="1.5" PointX="3" PointY="1" />
+        <AssociationConnector Association="CoalModel.FK_Street_CIty" />
+        <AssociationConnector Association="CoalModel.FK_Type_coal_City_coal" />
+        <AssociationConnector Association="CoalModel.FK_Home_Street" />
+        <AssociationConnector Association="CoalModel.FK_Physical_person_Home" />
+        <AssociationConnector Association="CoalModel.FK_Coal_grade_Order" />
+        <AssociationConnector Association="CoalModel.FK_Order_Physical_person" />
+        <AssociationConnector Association="CoalModel.FK_Coal_grade_Type_coal" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
